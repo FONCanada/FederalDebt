@@ -1,0 +1,789 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='public_feddebt_long' inline='true' name='federated.1trxgd2069ay2u15aj8ar0gczy5t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='public_feddebt_long' name='textscan.0ji8gy71heollk169ayvy1ambzwu'>
+            <connection class='textscan' directory='D:/Users/trevo/Dropbox/Outside Work and Policy/Finances of the Nation/Data Portal/Federal Debt' filename='public_feddebt_long.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ji8gy71heollk169ayvy1ambzwu' name='public_feddebt_long.csv' table='[public_feddebt_long#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='date' date-parse-format='yyyy' name='date' ordinal='0' />
+            <column datatype='integer' name='itemid' ordinal='1' />
+            <column datatype='string' name='fiscalyear' ordinal='2' />
+            <column datatype='string' name='Item' ordinal='3' />
+            <column datatype='string' name='Normalization' ordinal='4' />
+            <column datatype='real' name='Value' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ji8gy71heollk169ayvy1ambzwu' name='public_feddebt_long.csv' table='[public_feddebt_long#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='date' date-parse-format='yyyy' name='date' ordinal='0' />
+            <column datatype='integer' name='itemid' ordinal='1' />
+            <column datatype='string' name='fiscalyear' ordinal='2' />
+            <column datatype='string' name='Item' ordinal='3' />
+            <column datatype='string' name='Normalization' ordinal='4' />
+            <column datatype='real' name='Value' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>itemid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[itemid]</local-name>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias>itemid</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fiscalyear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fiscalyear]</local-name>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias>fiscalyear</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item]</local-name>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias>Item</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Normalization</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Normalization]</local-name>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias>Normalization</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[public_feddebt_long.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Item]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='public_feddebt_long.csv' datatype='table' name='[__tableau_internal_object_id__].[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='quantitative' />
+      <column caption='Fiscalyear' datatype='string' name='[fiscalyear]' role='dimension' type='nominal' />
+      <column caption='Itemid' datatype='integer' name='[itemid]' role='measure' type='quantitative' />
+      <column-instance column='[Item]' derivation='None' name='[none:Item:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='D:/Users/trevo/Dropbox/Outside Work and Policy/Finances of the Nation/Data Portal/Federal Debt/Federal Debt.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/06/2021 09:46:40 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='public_feddebt_long' increment-value='%null%' refresh-type='create' rows-inserted='9240' timestamp-start='2021-07-06 21:46:40.146' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>public_feddebt_long.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>158</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>itemid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[itemid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>itemid</remote-alias>
+              <ordinal>1</ordinal>
+              <family>public_feddebt_long.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fiscalyear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fiscalyear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fiscalyear</remote-alias>
+              <ordinal>2</ordinal>
+              <family>public_feddebt_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>158</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Item]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item</remote-alias>
+              <ordinal>3</ordinal>
+              <family>public_feddebt_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Normalization</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Normalization]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Normalization</remote-alias>
+              <ordinal>4</ordinal>
+              <family>public_feddebt_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>5</ordinal>
+              <family>public_feddebt_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4983</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Item:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Net federal debt&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Debt charges&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gross federal debt&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada savings bonds&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Item:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Net federal debt&quot;</bucket>
+            <bucket>&quot;Financial assets&quot;</bucket>
+            <bucket>&quot;Gross federal debt&quot;</bucket>
+            <bucket>&quot;Unmatured debt&quot;</bucket>
+            <bucket>&quot;Treasury bills&quot;</bucket>
+            <bucket>&quot;Canada savings bonds&quot;</bucket>
+            <bucket>&quot;Marketable bonds&quot;</bucket>
+            <bucket>&quot;Superannuation accounts&quot;</bucket>
+            <bucket>&quot;Other liabilities&quot;</bucket>
+            <bucket>&quot;Unmatured debt payable in foreign currencies&quot;</bucket>
+            <bucket>&quot;Debt charges&quot;</bucket>
+            <bucket>&quot;Cash deficit (+) or surplus (-)&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='public_feddebt_long.csv' id='public_feddebt_long.csv_9CB3ECD8F01A4CFAB78789B1B6ECF7E9'>
+            <properties context=''>
+              <relation connection='textscan.0ji8gy71heollk169ayvy1ambzwu' name='public_feddebt_long.csv' table='[public_feddebt_long#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='date' date-parse-format='yyyy' name='date' ordinal='0' />
+                  <column datatype='integer' name='itemid' ordinal='1' />
+                  <column datatype='string' name='fiscalyear' ordinal='2' />
+                  <column datatype='string' name='Item' ordinal='3' />
+                  <column datatype='string' name='Normalization' ordinal='4' />
+                  <column datatype='real' name='Value' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Federal Debt Sheet'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='18'>Federal Debt Measures</run>
+            <run><![CDATA[
+<[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='public_feddebt_long' name='federated.1trxgd2069ay2u15aj8ar0gczy5t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1trxgd2069ay2u15aj8ar0gczy5t'>
+            <column datatype='string' name='[Item]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Normalization]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='quantitative' />
+            <column-instance column='[Item]' derivation='None' name='[none:Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Normalization]' derivation='None' name='[none:Normalization:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year-Trunc' name='[tyr:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Item:nk]' member='&quot;Debt charges&quot;' />
+              <groupfilter function='member' level='[none:Item:nk]' member='&quot;Gross federal debt&quot;' />
+              <groupfilter function='member' level='[none:Item:nk]' member='&quot;Net federal debt&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]'>
+            <groupfilter function='member' level='[none:Normalization:nk]' member='&quot;Real 2019 per capita dollars&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:date:qk]' included-values='in-range'>
+            <min>#1867-01-01#</min>
+            <max>#2020-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]</column>
+            <column>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]</column>
+            <column>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[tyr:date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[sum:Value:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[sum:Value:qk]</rows>
+        <cols>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[tyr:date:qk]</cols>
+      </table>
+      <simple-id uuid='{E8312526-6473-4083-B1A7-0C08243C1217}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Federal Debt'>
+      <style />
+      <size maxheight='600' maxwidth='1200' minheight='250' minwidth='400' sizing-mode='range' />
+      <datasources>
+        <datasource caption='public_feddebt_long' name='federated.1trxgd2069ay2u15aj8ar0gczy5t' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1trxgd2069ay2u15aj8ar0gczy5t'>
+        <column datatype='string' name='[Item]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Normalization]' role='dimension' type='nominal' />
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='quantitative' />
+        <column-instance column='[Item]' derivation='None' name='[none:Item:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Normalization]' derivation='None' name='[none:Normalization:nk]' pivot='key' type='nominal' />
+        <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97334' id='7' param='horz' w='98666' x='667' y='1333'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='97334' id='5' w='78749' x='667' y='1333'>
+              <zone h='97334' id='3' name='Federal Debt Sheet' w='78749' x='667' y='1333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='239' h='97334' id='6' is-fixed='true' param='vert' w='19917' x='79416' y='1333'>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='89' h='16166' id='8' is-fixed='true' mode='checkdropdown' name='Federal Debt Sheet' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' show-all='false' w='19917' x='79416' y='1333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='142' h='25000' id='9' is-fixed='true' mode='radiolist' name='Federal Debt Sheet' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]' show-all='false' show-exclude='false' w='19917' x='79416' y='17499'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='137' h='24166' id='10' is-fixed='true' name='Federal Debt Sheet' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:date:qk]' show-domain='false' show-null-ctrls='false' w='19917' x='79416' y='42499'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='296' h='26669' id='11' is-fixed='true' name='Federal Debt Sheet' pane-specification-id='0' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' w='19917' x='79416' y='66665'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='5333' id='12' is-centered='0' is-scaled='1' param='D:/Users/trevo/Dropbox/Tweets Data/R/Shiny/Equalization/FON_logo.png' w='19917' x='79416' y='93334'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='14' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97334' id='13' param='vert' w='98666' x='667' y='1333'>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='89' h='16166' id='8' mode='checkdropdown' name='Federal Debt Sheet' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' show-all='false' w='19917' x='79416' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='142' h='25000' id='9' mode='dropdown' name='Federal Debt Sheet' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]' show-all='false' show-exclude='false' w='19917' x='79416' y='17499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' fixed-size='137' h='24166' id='10' name='Federal Debt Sheet' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:date:qk]' show-domain='false' show-null-ctrls='false' w='19917' x='79416' y='42499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97334' id='3' is-fixed='true' name='Federal Debt Sheet' w='78749' x='667' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='296' h='26669' id='11' name='Federal Debt Sheet' pane-specification-id='0' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' w='19917' x='79416' y='66665'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='24' h='5333' id='12' is-centered='0' is-fixed='true' is-scaled='1' param='D:/Users/trevo/Dropbox/Tweets Data/R/Shiny/Equalization/FON_logo.png' w='19917' x='79416' y='93334'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CE873066-0442-4A4A-801F-9C7745DFA319}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Federal Debt'>
+      <viewpoints>
+        <viewpoint name='Federal Debt Sheet'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EE27AB9B-5E09-4A1A-A49F-353FB15DBD0A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Federal Debt Sheet'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='246'>
+            <card mode='checkdropdown' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' show-all='false' type='filter' />
+            <card mode='radiolist' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]' show-all='false' show-exclude='false' type='filter' />
+            <card param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Item:nk]</field>
+            <field>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:Normalization:nk]</field>
+            <field>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[none:date:qk]</field>
+            <field>[federated.1trxgd2069ay2u15aj8ar0gczy5t].[tyr:date:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2A2204BF-E789-4035-9650-236976D112E7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Federal Debt' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
